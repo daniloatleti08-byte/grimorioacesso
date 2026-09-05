@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0805">
+  <title>O Grimório das 12 Palavras de São Bento</title>
+  <meta name="description" content="Acesso digital ao Grimório das 12 Palavras de São Bento.">
+  <style>
+    :root{--bg:#090704;--panel:#120e08;--gold:#d4ad55;--gold2:#f2d98f;--cream:#f7f0df;--muted:#b7aa94;--line:rgba(212,173,85,.24)}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+    body{background:radial-gradient(circle at 50% 0%,rgba(212,173,85,.13),transparent 32%),linear-gradient(180deg,#0c0905,#050403)}
+    .shell{min-height:100vh;display:flex;flex-direction:column}
+    .top{position:sticky;top:0;z-index:20;background:rgba(8,6,4,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .top-inner{width:min(1180px,calc(100% - 28px));margin:auto;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{min-width:0}.brand small{display:block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px}
+    .brand strong{display:block;font-family:Georgia,'Times New Roman',serif;color:var(--cream);font-size:clamp(16px,2vw,23px);line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .actions{display:flex;gap:10px;flex-shrink:0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:10px;text-decoration:none;font-weight:900;font-size:13px;border:1px solid var(--line);color:var(--cream);background:#151008}
+    .btn-primary{background:linear-gradient(180deg,#f0d58d,#c99638);color:#171006;border-color:#e5c16a}
+    .hero{width:min(1180px,calc(100% - 28px));margin:26px auto 18px;display:grid;grid-template-columns:220px 1fr;gap:26px;align-items:center;padding:24px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012))}
+    .cover{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+    .hero-copy h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(27px,4.2vw,52px);line-height:1.02;margin:0 0 12px;color:var(--gold2);letter-spacing:-.025em}
+    .hero-copy p{margin:0 0 18px;color:#d5cbbb;line-height:1.6;font-size:16px;max-width:760px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap}.chip{padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:#cfc3ae;font-size:12px;font-weight:800;background:rgba(255,255,255,.025)}
+    .viewer-wrap{width:min(1180px,calc(100% - 28px));margin:0 auto 28px;position:relative;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#1a1713;box-shadow:0 24px 70px rgba(0,0,0,.35)}
+    .viewer{display:block;width:100%;height:calc(100vh - 116px);min-height:680px;border:0;background:#2b2823}
+    .mobile-note{display:none;width:min(680px,calc(100% - 28px));margin:0 auto 24px;padding:16px;border:1px solid var(--line);border-radius:14px;color:#cfc4b0;background:#110d08;text-align:center;font-size:14px;line-height:1.5}
+    .footer{padding:22px 14px 30px;text-align:center;color:#8e8373;font-size:12px;border-top:1px solid rgba(212,173,85,.12)}
+    @media(max-width:760px){
+      .top-inner{min-height:64px}.brand small{font-size:9px}.brand strong{font-size:14px;max-width:190px}.actions .btn:not(.btn-primary){display:none}.btn{padding:0 13px;font-size:12px}
+      .hero{grid-template-columns:90px 1fr;gap:16px;margin-top:14px;padding:16px;border-radius:16px}.hero-copy h1{font-size:23px}.hero-copy p{font-size:13px;margin-bottom:12px}.meta{display:none}
+      .viewer-wrap{width:100%;border-left:0;border-right:0;border-radius:0;margin-bottom:12px}.viewer{height:76vh;min-height:520px}
+      .mobile-note{display:block}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div class="top-inner">
+        <div class="brand">
+          <small>Acesso digital liberado</small>
+          <strong>O Grimório das 12 Palavras de São Bento</strong>
+        </div>
+        <div class="actions">
+          <a class="btn" href="/grimorio.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+          <a class="btn btn-primary" href="/grimorio.pdf" target="_blank" rel="noopener">Tela cheia</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img class="cover" src="/assets/capa-grimorio.webp" alt="Capa de O Grimório das 12 Palavras de São Bento">
+      <div class="hero-copy">
+        <h1>Seu Grimório está disponível.</h1>
+        <p>Leia pelo navegador no celular, tablet ou computador. Se preferir, use o botão <strong>Tela cheia</strong> para abrir o PDF diretamente no visualizador do seu navegador.</p>
+        <div class="meta">
+          <span class="chip">97 páginas</span>
+          <span class="chip">Guia devocional digital</span>
+          <span class="chip">Uso pelo navegador</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="mobile-note">No celular, se o PDF não aparecer completo abaixo, toque em <strong>Tela cheia</strong> no topo. O arquivo abrirá diretamente no navegador.</div>
+
+    <main class="viewer-wrap" aria-label="Visualizador do Grimório">
+      <iframe class="viewer" src="/grimorio.pdf#view=FitH&toolbar=1&navpanes=0" title="O Grimório das 12 Palavras de São Bento"></iframe>
+    </main>
+
+    <footer class="footer">Material digital para uso pessoal do comprador.</footer>
+  </div>
+</body>
+</html>
